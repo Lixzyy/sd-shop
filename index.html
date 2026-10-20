@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Réglages de la page : titre de l’onglet, description et fichier de styles. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SD SHOP </title>
+    <meta name="description" content="créations sur mesure et optimisation PC. Découvre la boutique SD SHOP.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- 1. EN-TÊTE : logo, liens du menu et bouton du panier. -->
+    <header>
+      <a class="logo" href="#">SD<span> SHOP</span></a>
+
+      <nav>
+        <a href="#catalogue">La boutique</a>
+        <a href="#fonctionnement">Comment commander</a>
+        <a href="#regles">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 2. ACCUEIL : décor, texte de présentation et personnages. -->
+      <section class="hero" id="univers">
+        <!-- Le décor est défini dans style.css. -->
+        <div class="backdrop"></div>
+        <div class="grid"></div>
+        <div class="huge" aria-hidden="true">SD SHOP</div>
+
+        <!-- Modifie ici le titre et le texte affichés en haut du site. -->
+        <div class="copy">
+          <div class="eyebrow"><i></i> CRÉATIONS · PERFORMANCE</div>
+          <h1>TON STYLE.<br>TON UNIVERS.<br><em>SD SHOP.</em></h1>
+          <p> créations personnalisées et optimisation PC.<br>Les détails qui font toute la différence.</p>
+
+          <div class="actions">
+            <a class="primary" href="#catalogue">Explorer la boutique <span>↗</span></a>
+            <a href="#fonctionnement" class="textlink">Comment commander ↓</a>
+          </div>
+
+          <div class="tags">
+            <span>DESIGN</span>
+            <span>PERFORMANCE</span>
+          </div>
+        </div>
+
+        <!-- app.js ajoute les images du dossier assets dans #characters. -->
+        <div class="stage" aria-label="Personnages de l’univers roleplay">
+          <div class="halo"></div>
+          <div id="characters"></div>
+          <div class="cross cross1">+</div>
+          <div class="cross cross2">+</div>
+        </div>
+
+        <div class="hero-bottom">
+          <span>CRÉATIONS DIGITALES · DÈS 2 €</span>
+          <span>FAIS DÉFILER POUR DÉCOUVRIR ↓</span>
+        </div>
+      </section>
+
+      <!-- 3. BANDEAU : les catégories affichées sous l’accueil. -->
+      <div class="ticker">
+        <span>CRÉATIONS SUR MESURE</span>✦
+        <span>OPTIMISATION PC</span>✦
+        <span>TON UNIVERS, NOTRE SIGNATURE</span>✦
+      </div>
+
+      <!-- 4. BOUTIQUE : présentation, filtres et liste des produits. -->
+      <section class="stories" id="catalogue" aria-labelledby="shop-title">
+        <div class="sectionhead">
+          <span class="eyebrow">01 / LA BOUTIQUE</span>
+          <h2 id="shop-title">Du style.<br><em>À petit prix.</em></h2>
+          <div class="shop-intro">
+            <p>Un nouveau look, des effets ou un PC à optimiser ?<br>Choisis ce qu’il te faut et compose ta sélection.</p>
+            <span class="shop-starting-price">Les prestations dès <b>2 €</b></span>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div class="filters" role="group" aria-label="Catégories de la boutique">
+            <button class="active" type="button" data-filter="Tous" aria-pressed="true" aria-controls="products">Tout voir <span class="filter-count">5</span></button>
+            <button type="button" data-filter="Packs" aria-pressed="false" aria-controls="products">Packs <span class="filter-count">2</span></button>
+            <button type="button" data-filter="Création" aria-pressed="false" aria-controls="products">Créations <span class="filter-count">2</span></button>
+            <button type="button" data-filter="Services" aria-pressed="false" aria-controls="products">Services <span class="filter-count">1</span></button>
+          </div>
+          <div class="shop-sort">
+            <label for="sort">Trier par</label>
+            <select id="sort">
+              <option value="selection">Notre sélection</option>
+              <option value="ascending">Prix croissant</option>
+              <option value="descending">Prix décroissant</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="shop-selection">
+          <span id="results" role="status">5 prestations</span>
+          <button class="shop-cart" type="button" data-join aria-haspopup="dialog">Mon panier <span class="cart-count">0</span><span aria-hidden="true">·</span><span id="shop-total">0 €</span><span aria-hidden="true">↗</span></button>
+        </div>
+
+        <!-- Pour changer les produits et les prix, modifie le tableau products dans app.js. -->
+        <div id="products" class="products"></div>
+        <p class="shop-note">Prépare ta sélection, puis ouvre un ticket achat sur Discord. <a href="#fonctionnement">Comment commander <span aria-hidden="true">↗</span></a></p>
+      </section>
+
+      <!-- 5. COMMANDE : explication des trois étapes. -->
+      <section class="process" id="fonctionnement">
+        <span class="eyebrow">02 / SIMPLE COMME UN MESSAGE</span>
+        <h2>Commander<br>Comment ça marche ?.</h2>
+
+        <div class="steps">
+          <article>
+            <b>01</b>
+            <h3>Rejoind le discord.</h3>
+            <p>https://discord.gg/sd-shop Puis ouvre un ticket achat.</p>
+          </article>
+
+          <article>
+            <b>02</b>
+            <h3>choisit tes achats.</h3>
+            <p>Choisit ce que tu veux puis envoie ta demande, le bot discord calculera le total et t'envera le moyen de paiement.</p>
+          </article>
+
+          <article>
+            <b>03</b>
+            <h3>Préparation.</h3>
+            <p>Ensuite nous préparons ta commande.</p>
+          </article>
+        </div>
+      </section>
+
+     
+
+      <!-- 7. DERNIER BLOC : invitation à ouvrir le panier. -->
+      <section class="last">
+        <span class="eyebrow">TON UNIVERS. NOTRE SIGNATURE.</span>
+        <h2>Prêt à donner du style<br>à <em>ton univers ?</em></h2>
+      </section>
+    </main>
+
+    <!-- 8. PIED DE PAGE : logo et mentions en bas du site. -->
+    <footer>
+      <a class="logo" href="#">SD<span> SHOP</span></a>
+      <span>créations & services.</span>
+      <span>SD SHOP © 2026</span>
+    </footer>
+
+    <!-- 9. PANIER : fenêtre ouverte par les boutons qui portent data-join. -->
+    <dialog id="join">
+      <button class="close" aria-label="Fermer">×</button>
+      <span class="eyebrow">TA SÉLECTION SD SHOP</span>
+
+      <!-- app.js remplit les articles, le total et le récapitulatif. -->
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="total">0 €</strong>
+      </div>
+
+      <label for="request">Ta demande à envoyer</label>
+      <textarea id="request" readonly rows="5"></textarea>
+      <button class="primary" id="copy">Copier ma demande ↗</button>
+      <p class="notice" id="status" role="status">Le paiement et la réalisation sont à convenir avec SD SHOP.</p>
+    </dialog>
+
+    <!-- Message temporaire après l’ajout d’un produit au panier. -->
+    <div id="toast" role="status"></div>
+
+    <!-- Charge le JavaScript qui fait fonctionner les boutons et la boutique. -->
+    <script src="app.js"></script>
+  </body>
+</html>
