@@ -60,15 +60,15 @@ restart();
 const products = [
   {
     name: 'Bloox Fx',
-    price: 2,
+    price: 3.50,
     cat: 'Packs',
     desc: 'Pack d’effets Bloox.',
     word: 'FX',
     art: '<path d="M60 8 30 55h35L50 94l44-55H62L80 8Z"/>'
   },
   {
-    name: 'Pack Citizen',
-    price: 3,
+    name: 'Pack ciel',
+    price: 5,
     cat: 'Packs',
     desc: 'Pack Citizen complet.',
     word: 'PACK',
@@ -76,17 +76,17 @@ const products = [
   },
   {
     name: 'Replace perso',
-    price: 2,
+    price: 3,
     cat: 'Création',
     desc: 'Remplacement personnalisé sur ta vidéo.',
     word: 'EDIT',
     art: '<rect x="15" y="15" width="80" height="60" rx="4"/><path d="m65 84 34-34 12 12-34 34H65ZM27 30h28M27 42h18"/>'
   },
   {
-    name: 'Bannière',
-    price: 7,
+    name: 'bot discord perso',
+    price: "sur devis",
     cat: 'Création',
-    desc: 'Bannière sur mesure pour ta chaîne ou ton serveur.',
+    desc: 'Bot discord sur mesure pour ton serveur.',
     word: 'DESIGN',
     art: '<rect x="5" y="22" width="110" height="60" rx="4"/><path d="M18 38h40M18 50h28M18 66h35m20-28 16 30 16-30"/>'
   },
